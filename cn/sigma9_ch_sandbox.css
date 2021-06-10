@@ -102,7 +102,7 @@ body {
     color: #333;
 }
 div#container-wrap {
-    background: url('http://scpsandboxcn.wdfiles.com/local--files/component%3Atheme/body_bg.png') top left repeat-x;
+    background: url('https://scpsandboxcn.wdfiles.com/local--files/component%3Atheme/body_bg.png') top left repeat-x;
 }
 td.name {
     width: 40%;
@@ -122,7 +122,7 @@ sup {
     position: relative;
     z-index: 10;
     padding-bottom: 22px; /* FOR MENU */
-    background: url('http://scpsandboxcn.wdfiles.com/local--files/component%3Atheme/logo.png') 10px 40px no-repeat;
+    background: url('https://scpsandboxcn.wdfiles.com/local--files/component%3Atheme/logo.png') 10px 40px no-repeat;
     background-size: 100px 100px;
 }
 #search-top-box {
@@ -373,7 +373,7 @@ sup {
     color: #666;
 }
 #side-bar .collapsible-block-folded {
-    background: url('http://scp-wiki-cn.wdfiles.com/local--files/nav%3Aside/expand.png') 0 2px no-repeat;
+    background: url('https://scpsandboxcn.wdfiles.com/local--files/nav%3Aside/expand.png') 0 2px no-repeat;
 }
 #side-bar .collapsible-block-link {
     margin-left: 15px;
@@ -429,17 +429,17 @@ iframe.scpnet-interwiki-frame {
 .yui-navset .yui-nav a,
 .yui-navset .yui-navset-top .yui-nav a {
     background-color: #d8d8d8;
-    background-image: url('http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png');
+    background-image: url('https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png');
 }
 .yui-navset .yui-nav .selected a,
 .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
 .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
-    background: #700 url('http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png') repeat-x left -1400px; /* selected tab background */
+    background: #700 url('https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png') repeat-x left -1400px; /* selected tab background */
     color: #fff;
 }
 .yui-navset .yui-nav a:hover,
 .yui-navset .yui-nav a:focus {
-    background: #d88 url('http://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png') repeat-x left -1300px;
+    background: #d88 url('https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png') repeat-x left -1300px;
     text-decoration: none;
 }
 .yui-navset .yui-nav,
@@ -530,7 +530,7 @@ div.sexy-box div.image-container img {
 }
 .content-panel .panel-body {
     padding: 5px 10px;
-    background: #fff9f0 url('http://scp-wiki-cn.wdfiles.com/local--files/component%3Atheme/panel-bg-gradient-reverse.png') bottom repeat-x;
+    background: #fff9f0 url('https://scpsandboxcn.wdfiles.com/local--files/component%3Atheme/panel-bg-gradient-reverse.png') bottom repeat-x;
 }
 .content-panel .panel-footer {
     padding: 1px 10px;
@@ -863,10 +863,10 @@ div.curved {
     border-radius: 10px;
     margin: 1em 3em;
 }
-/* CONTENT WARNING FOR ADULT CONTENT */
+/* Content Warning */
 div#u-adult-warning {
     width: fit-content;
-    margin: 0 auto 20px;
+    margin: 0 auto 1.25rem;
     padding: 0.5rem 1rem;
     border: 3px solid #333;
     background: #e4e4e4;
@@ -888,6 +888,41 @@ div#u-adult-warning > .error-block {
     margin: unset;
     border: unset;
     margin-bottom: 1em;
+}
+div#u-component-top-box {
+    max-width: 500px;
+    margin: 0 auto 1.25rem;
+    padding: 1rem;
+    background-color: #b01;
+    border-radius: 20px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.5), inset 0 10px 1px rgba(255,255,255,.5), inset 0 -15px 30px rgba(0,0,0,.25);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+div#u-component-top-box > div#u-component-header {
+    font-size: 300%;
+    text-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+div#u-component-top-box > div#u-component-header p {
+    margin: 0;
+}
+div#u-archived-top-box {
+    max-width: 375px;
+    margin: 0 auto 1.75rem;
+    padding: 1rem 1rem 0.5rem;
+    background-color: #e3e3e3;
+    border: 2px solid #a1a1a1;
+    border-radius: 2px;
+    color: #333;
+    text-align: center;
+}
+div#u-archived-top-box > div#u-archived-header {
+    font-size: 150%;
+    font-weight: bold;
+}
+div#u-archived-top-box > div#u-archived-header p {
+    margin: 0;
 }
 /*
     2011-11-13 Minobe Hiroyuki @ Marguerite Site
