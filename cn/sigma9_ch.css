@@ -749,6 +749,10 @@ div.sexy-box div.image-container img {
     box-shadow: inset 2px 3px 6px rgba(0,0,0,.15);
     border-radius: 5px 5px 0 0;
 }
+.thread-container .post .content {
+    position: relative;
+    overflow: hidden;
+}
 /* Hide Forum Signatures */
 .signature {
     display: none !important;
@@ -864,7 +868,7 @@ div.curved {
     margin: 1em 3em;
 }
 /* Content Warning */
-div#u-adult-warning {
+#page-content div#u-adult-warning {
     width: fit-content;
     margin: 0 auto 1.25rem;
     padding: 0.5rem 1rem;
@@ -874,22 +878,22 @@ div#u-adult-warning {
     text-align: center;
     font-weight: bold;
 }
-div#u-adult-warning > div#u-adult-header {
+#page-content div#u-adult-warning > div#u-adult-header {
     font-size: 300%;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
     color: #901;
 }
-div#u-adult-warning > div#u-adult-header p {
+#page-content div#u-adult-warning > div#u-adult-header p {
     margin: 0;
 }
-div#u-adult-warning > .error-block {
+#page-content div#u-adult-warning > .error-block {
     color: unset;
     padding: unset;
     margin: unset;
     border: unset;
     margin-bottom: 1em;
 }
-div#u-component-top-box {
+#page-content div#u-component-top-box {
     max-width: 500px;
     margin: 0 auto 1.25rem;
     padding: 1rem;
@@ -900,14 +904,14 @@ div#u-component-top-box {
     text-align: center;
     font-weight: bold;
 }
-div#u-component-top-box > div#u-component-header {
+#page-content div#u-component-top-box > div#u-component-header {
     font-size: 300%;
     text-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
-div#u-component-top-box > div#u-component-header p {
+#page-content div#u-component-top-box > div#u-component-header p {
     margin: 0;
 }
-div#u-archived-top-box {
+#page-content div#u-archived-top-box {
     max-width: 375px;
     margin: 0 auto 1.75rem;
     padding: 1rem 1rem 0.5rem;
@@ -917,11 +921,11 @@ div#u-archived-top-box {
     color: #333;
     text-align: center;
 }
-div#u-archived-top-box > div#u-archived-header {
+#page-content div#u-archived-top-box > div#u-archived-header {
     font-size: 150%;
     font-weight: bold;
 }
-div#u-archived-top-box > div#u-archived-header p {
+#page-content div#u-archived-top-box > div#u-archived-header p {
     margin: 0;
 }
 /*
@@ -1367,4 +1371,16 @@ img, embed, video, object, iframe, table {
 .thread-container .post .content *[style*=margin] {margin: 0 !important;}
 .thread-container .post .content *[style*=padding] {padding: 0 !important;}
 .thread-container .post .content *[style*=line-through] {text-decoration: none !important;}
-.thread-container .post .content *[style*=important]::before, .thread-container .post .content *[style*=important]::after {content: '请勿使用 !important ';font-style: italic;}
+.thread-container .post .content *[style*=important]::after {
+    content:' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #e1e1e1;
+    background-image: url("data:image/svg+xml,%3C!DOCTYPE svg PUBLIC %22-//W3C//DTD SVG 20010904//EN%22 %22http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd%22%3E%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22370%22 height=%2236%22%3E%3Cstyle xmlns=%22http://www.w3.org/2000/svg%22%3Etext%7Bfont-family:verdana,arial,helvetica,sans-serif;font-weight:bold;%7D%3C/style%3E%3Cg%3E%3Crect width=%22100%25%22 height=%22100%25%22 x=%220%22 y=%220%22 fill=%22%23e1e1e1%22 /%3E%3Ctext xml:space=%22preserve%22 font-size=%2224%22 x=%221%22 y=%2225.6%22 fill=%22%23f00%22%3E%E8%AF%B7%E5%8B%BF%E5%9C%A8%E8%AE%A8%E8%AE%BA%E5%8C%BA%E4%B8%AD%E4%BD%BF%E7%94%A8%20!important%3C/text%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

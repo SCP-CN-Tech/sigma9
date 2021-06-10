@@ -783,6 +783,10 @@ div.sexy-box div.image-container img {
     box-shadow: inset 2px 3px 6px rgba(0,0,0,.15);
     border-radius: 5px 5px 0 0;
 }
+.thread-container .post .content {
+    position: relative;
+    overflow: hidden;
+}
 /* Hide Forum Signatures */
 .signature {
     display: none !important;
@@ -898,7 +902,7 @@ div.curved {
     margin: 1em 3em;
 }
 /* Content Warning */
-div#u-adult-warning {
+#page-content div#u-adult-warning {
     width: fit-content;
     margin: 0 auto 1.25rem;
     padding: 0.5rem 1rem;
@@ -908,22 +912,22 @@ div#u-adult-warning {
     text-align: center;
     font-weight: bold;
 }
-div#u-adult-warning > div#u-adult-header {
+#page-content div#u-adult-warning > div#u-adult-header {
     font-size: 300%;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
     color: #901;
 }
-div#u-adult-warning > div#u-adult-header p {
+#page-content div#u-adult-warning > div#u-adult-header p {
     margin: 0;
 }
-div#u-adult-warning > .error-block {
+#page-content div#u-adult-warning > .error-block {
     color: unset;
     padding: unset;
     margin: unset;
     border: unset;
     margin-bottom: 1em;
 }
-div#u-component-top-box {
+#page-content div#u-component-top-box {
     max-width: 500px;
     margin: 0 auto 1.25rem;
     padding: 1rem;
@@ -934,14 +938,14 @@ div#u-component-top-box {
     text-align: center;
     font-weight: bold;
 }
-div#u-component-top-box > div#u-component-header {
+#page-content div#u-component-top-box > div#u-component-header {
     font-size: 300%;
     text-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
-div#u-component-top-box > div#u-component-header p {
+#page-content div#u-component-top-box > div#u-component-header p {
     margin: 0;
 }
-div#u-archived-top-box {
+#page-content div#u-archived-top-box {
     max-width: 375px;
     margin: 0 auto 1.75rem;
     padding: 1rem 1rem 0.5rem;
@@ -951,11 +955,11 @@ div#u-archived-top-box {
     color: #333;
     text-align: center;
 }
-div#u-archived-top-box > div#u-archived-header {
+#page-content div#u-archived-top-box > div#u-archived-header {
     font-size: 150%;
     font-weight: bold;
 }
-div#u-archived-top-box > div#u-archived-header p {
+#page-content div#u-archived-top-box > div#u-archived-header p {
     margin: 0;
 }
 /*
