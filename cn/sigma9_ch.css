@@ -102,7 +102,7 @@ body {
     color: #333;
 }
 div#container-wrap {
-    background: url('https://scp-wiki-cn.wdfiles.com/local--files/component%3Atheme/body_bg.png') top left repeat-x;
+    background: url('https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/img/body_bg.png') top left repeat-x;
 }
 td.name {
     width: 40%;
@@ -122,8 +122,7 @@ sup {
     position: relative;
     z-index: 10;
     padding-bottom: 22px; /* FOR MENU */
-    background: url('https://scp-wiki-cn.wdfiles.com/local--files/component%3Atheme/logo.png') 10px 40px no-repeat;
-    background-size: 100px 100px;
+    background: url('https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/img/logo.png') 10px 40px no-repeat;
 }
 #search-top-box {
     position: absolute;
@@ -530,7 +529,8 @@ div.sexy-box div.image-container img {
 }
 .content-panel .panel-body {
     padding: 5px 10px;
-    background: #fff9f0 url('https://scp-wiki-cn.wdfiles.com/local--files/component%3Atheme/panel-bg-gradient-reverse.png') bottom repeat-x;
+    background: #fff9f0 url('https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/img/panel-bg-gradient-reverse.png') bottom repeat-x;
+    /* box-shadow: 1px 2px 3px rgba(0,0,0,.2) inset */
 }
 .content-panel .panel-footer {
     padding: 1px 10px;
