@@ -372,7 +372,7 @@ sup {
     color: #666;
 }
 #side-bar .collapsible-block-folded {
-    background: url('https://scp-wiki-cn.wdfiles.com/local--files/nav%3Aside/expand.png') 0 2px no-repeat;
+    background: url('https://cdn.jsdelivr.net/gh/scp-cn-tech/sigma9@cn/img/expand.png') 0 2px no-repeat;
 }
 #side-bar .collapsible-block-link {
     margin-left: 15px;
