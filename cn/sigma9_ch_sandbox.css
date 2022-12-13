@@ -1495,6 +1495,9 @@ img, embed, video, object, iframe, table {
     .content-panel .panel-body {
         background: #444440 url('https://sigma9.scpwikicn.com/img/panel-bg-gradient-reverse_dark.svg') bottom repeat-x;
     }
+    .alternate:nth-child(even) {
+        background-color: #444d;
+    }
     /* Page history diff */
     .inline-diff ins {
         background-color: #23238f;

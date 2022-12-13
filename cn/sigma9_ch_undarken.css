@@ -137,6 +137,9 @@
     .content-panel .panel-body {
         background: #444440 var(--panel-bg-original) bottom repeat-x;
     }
+	.alternate:nth-child(even) {
+		background-color: rgba(255,255,255,.9);
+	}
     /* Page history diff */
     .inline-diff ins {
         background-color: #DDF;
