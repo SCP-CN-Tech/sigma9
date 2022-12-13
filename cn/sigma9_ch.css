@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 @import url('https://sigma9.scpwikicn.com/cn/fonts/font-bauhaus.css');
-@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
-@import url('https://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 /* 多重折叠模块 */
 @import url('https://sigma9.scpwikicn.com/cn/modules/colstyle.min.css');
@@ -123,6 +122,8 @@ sup {
     z-index: 10;
     padding-bottom: 22px; /* FOR MENU */
     background: url('https://sigma9.scpwikicn.com/cn/img/logo.png') 10px 40px no-repeat;
+    background-size: 100px;
+    background-position: 10px 64%;
 }
 #search-top-box {
     position: absolute;
@@ -330,6 +331,21 @@ sup {
     background: #fff;
     margin-bottom: 15px;
 }
+#side-bar .side-block.resources {
+    background-color: #e7e5e8;
+}
+#side-bar .side-block.newcomer {
+    background-color: #f0fff6;
+}
+#side-bar .side-block.media {
+    background-color: #e5e5ff;
+}
+#side-bar .side-block.admin {
+    background-color: #fff0f0;
+}
+#side-bar .side-block.license {
+    background-color: #f0f0f0;
+}
 #side-bar .side-area {
     padding: 10px;
 }
@@ -405,6 +421,12 @@ iframe.scpnet-interwiki-frame {
     border: none;
     overflow-y: hidden;
 }
+
+/* off-canvas */
+.close-menu {
+    display: none;
+}
+
 /* CONTENT */
 #main-content {
     margin: 0 2em 0 22em;
@@ -564,7 +586,9 @@ div.sexy-box div.image-container img {
     margin-bottom: 10px;
     margin-right: 2em;
 }
-.page-rate-widget-box .rate-points {
+
+/* Has increased specificity to override action-area rate's stylesheet */
+div.page-rate-widget-box .rate-points {
     background-color: #633 !important;
     border: solid 1px #633;
     border-right: 0;
@@ -1383,4 +1407,271 @@ img, embed, video, object, iframe, table {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/* Dark theme colors */
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --body-bg-original: url('https://sigma9.scpwikicn.com/cn/img/body_bg.png');
+        --panel-bg-original: url('https://sigma9.scpwikicn.com/img/panel-bg-gradient-reverse.png');
+    }
+    h1, #page-title {
+        color: #E72838;
+    }
+    #page-title {
+        border-color: #bbb;
+    }
+    .meta-title {
+        border-bottom: solid 1px #bbb;
+        color: #E72838;
+    }
+    a {
+        color: #E72838;
+        text-decoration: none;
+        background: transparent;
+    }
+    a:visited {
+        color: #d01;
+    }
+    #side-bar a:visited {
+        color: #E72838;
+    }
+    a.newpage {
+        color: #d61;
+        background: transparent;
+    }
+    body {
+        background-color: #333;
+        color: #ccc;
+    }
+    blockquote, div.blockquote {
+        border: 1px dashed #999;
+        background-color: #444;
+    }
+    #top-bar ul li ul {
+        border: solid 1px #333;
+    }
+    #top-bar ul li.sfhover a,
+    #top-bar ul li:hover a {
+        background: #333;
+        color: #E72838;
+    }
+    #top-bar ul li.sfhover ul li a,
+    #top-bar ul li:hover ul li a {
+        border-top: 1px solid #666;
+    }
+    #top-bar ul li.sfhover a:hover,
+    #top-bar ul li:hover a:hover {
+        background: #444;
+    }
+    div#container-wrap {
+        background: url('https://sigma9.scpwikicn.com/cn/img/body_bg_dark.svg') top left repeat-x;
+        background-size: 100px 400px;
+    }
+    #top-bar ul li ul a, #top-bar a:hover {
+        color: #E72838;
+    }
+    #side-bar .side-block,
+    #side-bar .side-block.resources,
+    #side-bar .side-block.newcomer,
+    #side-bar .side-block.media,
+    #side-bar .side-block.admin,
+    #side-bar .side-block.license {
+        border: 1px solid #CE1D1D;
+        box-shadow: 0 2px 6px rgba(102,0,0,.5);
+        background: #333;
+    }
+    #side-bar .heading {
+        color: #d00;
+        border-bottom: solid 1px #CE1D1D;
+    }
+    #side-bar .collapsible-block-unfolded-link {
+        border-bottom: solid 1px #CE1D1D;
+    }
+    #side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+    #side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+        color: #E72838;
+    }
+    /* Tabview */
+    .yui-navset .yui-content {
+        background-color: #444;
+    }
+    .yui-navset .yui-nav a,
+    .yui-navset .yui-navset-top .yui-nav a {
+        color: #fff;
+        background-image: linear-gradient(to bottom, #444, #444 90%, #2a2a2a 100%);
+        background-color: #444;
+    }
+    .yui-navset .yui-nav .selected a,
+    .yui-navset .yui-nav .selected a em {
+        border-color: #a3a3a3;
+    }
+    .yui-navset .yui-nav .selected a,
+    .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+    .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+        background: #700 linear-gradient(to bottom, #961A1A, #931616 50%, #700 90%, #333 100%);
+        color: #fff;
+    }
+    .yui-navset .yui-nav a:hover,
+    .yui-navset .yui-nav a:focus {
+        background: #777 linear-gradient(to bottom, #777, #555 90%, #333 100%);
+    }
+    .yui-navset .yui-nav,
+    .yui-navset .yui-navset-top .yui-nav {
+        border-color: #777;
+    }
+    .yui-navset .yui-content,
+    .yui-navset .yui-navset-top .yui-content {
+        border-top-color: #666;
+    }
+    /* SOME NICE BOXES */
+    div.sexy-box {
+        background: #444;
+        border: 1px solid #777;
+    }
+    /* Custom page content classes */
+    .content-panel {
+        border: solid 1px #444;
+        background-color: #555;
+    }
+    .content-panel.standalone {
+        background: #555;
+    }
+    .content-panel .content-toc {
+        background-color: #555;
+        border: solid 1px #ccc;
+    }
+    .content-panel .panel-body {
+        background: #444440 url('https://sigma9.scpwikicn.com/img/panel-bg-gradient-reverse_dark.svg') bottom repeat-x;
+    }
+    /* Page history diff */
+    .inline-diff ins {
+        background-color: #23238f;
+    }
+    .inline-diff ins::before {
+        color: #23238f;
+    }
+    .inline-diff del {
+        background-color: #881d1d;
+    }
+    .inline-diff del::before {
+        color: #881d1d;
+    }
+    /* Dicussion section */
+    .forum-thread-box .description-block {
+        background-color: #444;
+        border: 1px solid #555;
+    }
+    .forum-thread-box .description-block .head,
+    .forum-thread-box .description-block .statistics {
+        color: #ddd;
+    }
+    .thread-container .post .head {
+        background-color: #444;
+        background: linear-gradient(to right, #444, #444c4c);
+    }
+    .thread-container .post .content *[style*=important]::after {
+        background-color: #444;
+    }
+    div.new-post a {
+        background-color: #444;
+    }
+    /* Content Warning */
+    #page-content div#u-adult-warning {
+        border: 3px solid #333;
+        background: #444;
+        color: #ccc;
+    }
+    #page-content div#u-adult-warning > div#u-adult-header {
+        color: #E72838;
+    }
+    #page-content div#u-component-top-box {
+        background-color: #b01;
+        color: #fff;
+    }
+    #page-content div#u-archived-top-box {
+        background-color: #555;
+        border: 2px solid #444;
+        color: #ddd;
+    }
+    /* Code highlights */
+    .hl-default, .hl-code, .hl-brackets, .hl-identifier {
+        color: #ccc;
+    }
+    .hl-gutter {
+        background-color: transparent;
+        color: #ccc,
+    }
+    .hl-comment, .hl-var {
+        color: #494;
+    }
+    .hl-quotes, .hl-string {
+        color: #448fff;
+    }
+    .hl-builtin {
+        color: #2fb8b8;
+    }
+    .hl-reserved {
+        color: #6dcaf5;
+    }
+    .hl-inlinedoc, .hl-url {
+        color: #5252ff;
+    }
+    .hl-special {
+        color: #7272e0;
+        font-weight: bold;
+    }
+    .hl-number {
+        color: #f35f5f;
+    }
+    .hl-inlinetags {
+        color: #e971e9;
+    }
+    /* misc */
+    .keycap {
+        border-color: #ddd #bbb #bbb #ddd;
+        background-color: #666;
+    }
+    div.buttons input, input.button, button, file, a.button {
+        background-color: #555;
+        color: #ddd;
+    }
+    div.buttons input:hover, input.button:hover, button:hover, a.button:hover {
+        background-color: #777;
+        color: #ddd;
+    }
+    #license-area {
+        color: #bbb;
+    }
+    .hovertip {
+        background-color: #555 !important;
+        border-color: #777 !important;
+    }
+    .code {
+        background-color: #444;
+    }
+    table.wiki-content-table th {
+        background-color: #666;
+        color: #eee;
+    }
+    textarea, input.text, #lock-info, .preview-message {
+        background-color: #444;
+        color: #ddd;
+    }
+    .owindow {
+        background-color: #444;
+        border: 2px solid #777;
+    }
+    .scp-image-block .scp-image-caption {
+        background-color: #444;
+    }
+    .pager .current,
+    .pager a {
+        border: 1px solid #ddda;
+    }
+    @media (max-width: 767px) {
+        #side-bar {
+            background-color: rgb(145, 89, 89);
+        }
+    }
 }

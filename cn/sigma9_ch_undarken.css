@@ -1,0 +1,285 @@
+/* Patch to remove dark theme */
+@media screen and (prefers-color-scheme: dark) {
+    h1, #page-title {
+        color: #901;
+    }
+    #page-title {
+        border-color: #bbb;
+    }
+    .meta-title {
+        border-bottom: solid 1px #bbb;
+        color: #901;
+    }
+    a {
+        color: #b01;
+        text-decoration: none;
+        background: transparent;
+    }
+    a:visited {
+        color: #824;
+    }
+    #side-bar a:visited {
+        color: #b01;
+    }
+    a.newpage {
+        color: #d61;
+        background: transparent;
+    }
+    body {
+        background-color: #fff;
+        color: #333;
+    }
+    blockquote, div.blockquote {
+        border: 1px dashed #999;
+        background-color: #f4f4f4;
+    }
+    #top-bar ul li ul {
+        border: solid 1px #666;
+    }
+    #top-bar ul li.sfhover a,
+    #top-bar ul li:hover a {
+        background: #eee;
+        color: #a01;
+    }
+    #top-bar ul li.sfhover ul li a,
+    #top-bar ul li:hover ul li a {
+        border-top: 1px solid #ddd;
+    }
+    #top-bar ul li.sfhover a:hover,
+    #top-bar ul li:hover a:hover {
+        background: #fff;
+    }
+    #top-bar ul li ul a, #top-bar a:hover {
+        color: #a01;
+    }
+    div#container-wrap {
+        background: var(--body-bg-original) top left repeat-x;
+    }
+    #side-bar .side-block {
+        border: 1px solid #600;
+        background: #fff;
+    }
+    #side-bar .side-block.resources {
+        background-color: #e7e5e8;
+    }
+    #side-bar .side-block.newcomer {
+        background-color: #f0fff6;
+    }
+    #side-bar .side-block.media {
+        background-color: #e5e5ff;
+    }
+    #side-bar .side-block.admin {
+        background-color: #fff0f0;
+    }
+    #side-bar .side-block.license {
+        background-color: #f0f0f0;
+    }
+    #side-bar .heading {
+        color: #600;
+        border-bottom: solid 1px #600;
+    }
+    #side-bar .collapsible-block-unfolded-link {
+        border-bottom: solid 1px #600;
+    }
+    #side-bar .collapsible-block-unfolded-link .collapsible-block-link,
+    #side-bar .collapsible-block-unfolded-link .collapsible-block-link:hover {
+        color: #b01;
+    }
+    /* Tabview */
+    .yui-navset .yui-content {
+        background-color: #444;
+    }
+    .yui-navset .yui-nav a,
+    .yui-navset .yui-navset-top .yui-nav a {
+        background-image: url('https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png');
+        background-color: #d8d8d8;
+        color: #333;
+}
+    .yui-navset .yui-nav .selected a,
+    .yui-navset .yui-nav .selected a em {
+        border-color: #a3a3a3;
+    }
+    .yui-navset .yui-nav .selected a,
+    .yui-navset .yui-nav .selected a:focus, /* no focus effect for selected */
+    .yui-navset .yui-nav .selected a:hover { /* no hover effect for selected */
+        background: #700 url('https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png') repeat-x left -1400px; /* selected tab background */
+        color: #333;
+    }
+    .yui-navset .yui-nav a:hover,
+    .yui-navset .yui-nav a:focus {
+        background: #d88 url('https://d3g0gp89917ko0.cloudfront.net/v--3b8418686296/common--theme/shiny/images/yuitabs.png') repeat-x left -1300px;
+    }
+    .yui-navset .yui-nav,
+    .yui-navset .yui-navset-top .yui-nav {
+        border-color: #444;
+    }
+    .yui-navset .yui-content,
+    .yui-navset .yui-navset-top .yui-content {
+        border-top-color: #243356;
+    }
+    /* SOME NICE BOXES */
+    div.sexy-box {
+        background: #eee;
+        border: 1px solid #ccc;
+    }
+    /* Custom page content classes */
+    .content-panel {
+        border: solid 1px #888880;
+        background-color: #999990;
+    }
+    .content-panel.standalone {
+        background: #fcfdfb;
+    }
+    .content-panel .content-toc {
+        background-color: #fff;
+        border: solid 1px #ccc;
+    }
+    .content-panel .panel-body {
+        background: #444440 var(--panel-bg-original) bottom repeat-x;
+    }
+    /* Page history diff */
+    .inline-diff ins {
+        background-color: #DDF;
+    }
+    .inline-diff ins::before {
+        color: #DDF;
+    }
+    .inline-diff del {
+        background-color: #FCC;
+    }
+    .inline-diff del::before {
+        color: #FCC;
+    }
+    /* Dicussion section */
+    .forum-thread-box .description-block {
+        background-color: #F5F5F5;
+        border: 1px solid #CCC
+    }
+    .forum-thread-box .description-block .head {
+        color: #777;
+    }
+    .forum-thread-box .description-block .statistics {
+        color: #666;
+    }
+    .thread-container .post .head {
+        background-color: #eee;
+        background: linear-gradient(to right,#eee,#eeecec);
+    }
+    .thread-container .post .content *[style*=important]::after {
+        background-color: #e1e1e1;
+    }
+    div.new-post a {
+        background-color: #F7F7F7
+    }
+    /* Content Warning */
+    #page-content div#u-adult-warning {
+        border: 3px solid #333;
+        background: #e4e4e4;
+        color: #333;
+    }
+    #page-content div#u-adult-warning > div#u-adult-header {
+        color: #901;
+    }
+    #page-content div#u-component-top-box {
+        background-color: #b01;
+        color: #fff;
+    }
+    #page-content div#u-archived-top-box {
+        background-color: #e3e3e3;
+        border: 2px solid #a1a1a1;
+        color: #333;
+    }
+    /* Code highlights */
+    .hl-default,
+    .hl-code,
+    .hl-identifier,
+    .hl-brackets {
+        color: #000;
+    }
+    .hl-comment {
+        color: #494;
+    }
+    .hl-quotes,
+    .hl-string {
+        color: #009;
+    }
+    .hl-builtin {
+        color: Teal;
+    }
+    .hl-reserved {
+        color: #55D;
+    }
+    .hl-inlinedoc,
+    .hl-url {
+        color: Blue;
+    }
+    .hl-var {
+        color: #494;
+    }
+    .hl-special {
+        color: Navy;
+    }
+    .hl-number {
+        color: Maroon;
+    }
+    .hl-inlinetags {
+        color: #949;
+    }
+    .hl-gutter {
+        background-color: #999999;
+        color: White
+    }
+    /* misc */
+    .keycap {
+        border-color: #ddd #bbb #bbb #ddd;
+        background-color: #f9f9f9;
+    }
+    div.buttons input, input.button, button, file, a.button {
+        background-color: #F4F4F4;
+        color: #000;
+    }
+    div.buttons input:hover, input.button:hover, button:hover, a.button:hover {
+        background-color: #777;
+        color: #ddd;
+    }
+    #license-area {
+        color: #555;
+    }
+    .hovertip {
+        background-color: #F3F3F3 !important;
+        border-color: black !important;
+    }
+    .code {
+        background-color: #F7F7F7;
+    }
+    table.wiki-content-table th {
+        background-color: #EEE;
+        color: #333;
+    }
+    textarea, input.text, .preview-message {
+        background-color: #FFF;
+        color: #000;
+    }
+    #lock-info {
+        background-color: #F3F3F3;
+        color: #333;
+    }
+    .owindow {
+        background-color: white;
+        border: 2px solid #BBB;
+    }
+    .scp-image-block .scp-image-caption {
+        background-color: #eee;
+    }
+    .pager .current {
+        border: 1px solid #333;
+    }
+    .pager a {
+        border: 1px solid #CCC;
+    }
+    @media (max-width: 767px) {
+        #side-bar {
+            background-color: rgb(184, 134, 134);
+        }
+    }
+}

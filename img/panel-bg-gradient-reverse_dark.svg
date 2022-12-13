@@ -1,0 +1,11 @@
+<svg version="1.1" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="a" x1="50" x2="50" y1="200" gradientUnits="userSpaceOnUse">
+<stop stop-color="#343430" stop-opacity=".75686" offset="0"/>
+<stop stop-color="#343430" stop-opacity=".070588" offset=".575"/>
+<stop stop-color="#343430" stop-opacity="0" offset=".6"/>
+<stop stop-color="#2e2e2c" stop-opacity="0" offset="1"/>
+</linearGradient>
+</defs>
+<rect width="100" height="200" fill="url(#a)" style="paint-order:stroke markers fill"/>
+</svg>
