@@ -1366,6 +1366,7 @@ img, embed, video, object, iframe, table {
     content: '讨论区图片请折叠';
     font-style: italic;
 }
+.thread-container .post .content .avatarhover > a > img,
 .thread-container .post .content .collapsible-block > .collapsible-block-unfolded > .collapsible-block-content img {
     display: block !important;
 }
@@ -1375,6 +1376,7 @@ img, embed, video, object, iframe, table {
         content: '讨论区图片请折叠';
         font-style: italic;
     }
+	.thread-container .post .content .avatarhover > a::before,
     .thread-container .post .content .collapsible-block > .collapsible-block-unfolded *:has(> img)::before {
         content: ' ';
         font-style: unset;
