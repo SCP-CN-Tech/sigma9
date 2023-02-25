@@ -1357,6 +1357,7 @@ img, embed, video, object, iframe, table {
     width: 0 !important;
     height: 0 !important;
 }
+.thread-container .post .content img,
 .thread-container .post .content > .image-container .image {
     display: none !important;
 }
@@ -1364,6 +1365,20 @@ img, embed, video, object, iframe, table {
 .thread-container .post .content > .image-container::before {
     content: '讨论区图片请折叠';
     font-style: italic;
+}
+.thread-container .post .content .collapsible-block > .collapsible-block-unfolded > .collapsible-block-content img {
+    display: block !important;
+}
+@supports selector(:has(a, b)) {
+    .thread-container .post .content:has(> img)::before,
+    .thread-container .post .content *:has(> img)::before {
+        content: '讨论区图片请折叠';
+        font-style: italic;
+    }
+    .thread-container .post .content .collapsible-block > .collapsible-block-unfolded *:has(> img)::before {
+        content: ' ';
+        font-style: unset;
+    }
 }
 /* 禁用讨论区的特殊格式 */
 .thread-container .post .content *[style*=position] {position: static !important;}
