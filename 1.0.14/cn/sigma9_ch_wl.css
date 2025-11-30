@@ -708,7 +708,6 @@ div.sexy-box div.image-container img {
 }
 .scp-image-block img {
     border: 0;
-    width: 300px;
 }
 .scp-image-block .scp-image-caption {
     background-color: #eee;
@@ -717,7 +716,6 @@ div.sexy-box div.image-container img {
     font-size: 80%;
     font-weight: bold;
     text-align: center;
-    width: 300px;
 }
 .scp-image-block > p {
     margin: 0;
