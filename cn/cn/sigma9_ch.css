@@ -1009,7 +1009,7 @@ div.curved {
 img, embed, video, object, iframe, table {
     max-width: 100%;
 }
-#page-content div, #page-content div table {
+:where(#page-content) div {
     max-width: 100%;
 }
 #edit-page-comments {
@@ -1403,4 +1403,8 @@ img, embed, video, object, iframe, table {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+}
+/* 允許對保存頁面遮罩後面的元素進行交互 */
+.odialog-shader, .odialog-shader-iframe{
+    pointer-events: none;
 }
